@@ -1,10 +1,9 @@
 import './App.css';
-import Fetch from './components/Fetch';
-
+import Example from './components/Example';
 function App() {
   return (
     <div className="App">
-      <Fetch />
+      <Example />
     </div>
   );
 }
