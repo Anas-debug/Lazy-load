@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React,{useState, useEffect} from "react";
 import axios from 'axios';
 
-function LazyLoad() {
+function Fetch() {
     const [images, setImages] = useState([]);
     const [page, setPage] = useState(1);
 
@@ -22,21 +22,18 @@ function LazyLoad() {
         }catch(error) {
                 console.log("Error getting data");
         }
-
+        const content = images.map((image) => {
+            <div>{image}</div>
+        });
         return(
             <div>
                 <div>Images List</div>
                 <div>
-                    {images.map((image) => {
-                        <div key = {image.id}>
-                             <h4>id: {image.id}</h4>
-                            <img src ={image.url} height ="150px" width = "150px"  />
-                        </div>
-                    })}
                 </div>
             </div>
         )
     }
 }
 
-export default LazyLoad;
+export default Fetch;
+

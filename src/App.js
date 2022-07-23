@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import LazyLoad from './components/LazyLoad';
+import Fetch from './components/Fetch';
 
 function App() {
   return (
     <div className="App">
-      <LazyLoad />
+      <Fetch />
     </div>
   );
 }
