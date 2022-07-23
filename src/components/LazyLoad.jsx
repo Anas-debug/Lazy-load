@@ -17,6 +17,7 @@ function LazyLoad() {
                 );
             if(imagesRetreived){
                 setImages([...images, ...imagesRetreived.data]);
+                console.log(images);
             } 
         }catch(error) {
                 console.log("Error getting data");
@@ -24,11 +25,12 @@ function LazyLoad() {
 
         return(
             <div>
+                <div>Images List</div>
                 <div>
                     {images.map((image) => {
                         <div key = {image.id}>
                              <h4>id: {image.id}</h4>
-                            <img src ={image.url} height ="200px" width = "250px"  />
+                            <img src ={image.thumbnailUrl} height ="150px" width = "150px"  />
                         </div>
                     })}
                 </div>
