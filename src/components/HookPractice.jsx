@@ -7,7 +7,7 @@ export default function HookPractice(){
 
     useEffect(() =>{
         console.log("Effect Run");
-    }, []);
+    }, [count]);
 
     return(
         <div>
