@@ -1,9 +1,10 @@
 import './App.css';
-import Example from './components/Example';
+import FetchJSonPlaceholder from './components/FetchJsonPlaceholder';
+
 function App() {
   return (
     <div className="App">
-      <Example />
+      <FetchJSonPlaceholder />
     </div>
   );
 }
