@@ -1,10 +1,9 @@
 import './App.css';
-import FetchJSonPlaceholder from './components/FetchJsonPlaceholder';
-
+import HookPractice from './components/HookPractice';
 function App() {
   return (
     <div className="App">
-      <FetchJSonPlaceholder />
+      <HookPractice />
     </div>
   );
 }
