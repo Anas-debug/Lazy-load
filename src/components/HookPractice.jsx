@@ -7,10 +7,11 @@ export default function HookPractice(){
 
     useEffect(() =>{
         console.log("Effect Run");
-    })
+    }, []);
 
     return(
         <div>
+            <pre>{JSON.stringify(data, null, 3)}</pre>
             <h1>You Clicked {count} times!</h1>
             <button onClick ={() => {setCount(count+1)}}>Add</button>
             <button onClick = {() => {setCount(0)}}>Reset</button>
